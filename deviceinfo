@@ -8,7 +8,7 @@ export DEVICE_MODEL="Pocket 2+"
 export DEVICE_CODENAME="pocket2plus"
 
 # Device screen configuration
-# Screen rotation(in degrees): 0, 90, or 180
+# Screen rotation (in 90°CW increments): 1 for 90°CW, 2 for 180°CW, or 3 for 270°CW
 export SDL_SCREEN_ROTATION=0
-# Skip the SDL encoder ID check
+# Skip the SDL encoder ID check (Unisoc devices report invalid encoder IDs)
 export SDL_SKIP_ENCODER_ID_CHECK=true
