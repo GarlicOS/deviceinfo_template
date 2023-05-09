@@ -2,10 +2,12 @@
 # Device info properties and various device environment variables
 
 # Device Information
-export DEVICE_NAME="Retroid Pocket 2+"
-export DEVICE_MANUFACTURER="Retroid"
-export DEVICE_MODEL="Pocket 2+"
-export DEVICE_CODENAME="pocket2plus"
+# If the device's values from default.prop aren't correct or don't make sense,
+# it might make more sense to just fill this out by hand.
+export DEVICE_MANUFACTURER=`getprop ro.product.manufacturer`
+export DEVICE_MODEL=`getprop ro.product.model`
+export DEVICE_NAME="$DEVICE_MANUFACTURER $DEVICE_MODEL"
+export DEVICE_CODENAME=`echo $DEVICE_MODEL | tr "[:upper:]" "[:lower:]"`
 
 # Device screen configuration
 # Screen rotation (in 90°CW increments): 1 for 90°CW, 2 for 180°CW, or 3 for 270°CW
