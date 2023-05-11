@@ -13,7 +13,7 @@ export DEVICE_CODENAME=`echo $DEVICE_MODEL | tr "[:upper:]" "[:lower:]"`
 # Screen rotation (in 90°CW increments): 1 for 90°CW, 2 for 180°CW, or 3 for 270°CW
 export SDL_SCREEN_ROTATION=0
 # Skip the SDL encoder ID check (Unisoc devices report invalid encoder IDs)
-export SDL_SKIP_ENCODER_ID_CHECK=true
+export SDL_SKIP_ENCODER_ID_CHECK=1
 # Tell SDL to blacklist unwanted joysticks
 export SDL_JOYSTICK_DEVICE_BLACKLIST=unwanted:inputdevice:names
 # Override the ALSA default period size
