@@ -14,3 +14,5 @@ export DEVICE_CODENAME=`echo $DEVICE_MODEL | tr "[:upper:]" "[:lower:]"`
 export SDL_SCREEN_ROTATION=0
 # Skip the SDL encoder ID check (Unisoc devices report invalid encoder IDs)
 export SDL_SKIP_ENCODER_ID_CHECK=true
+# Tell SDL to blacklist unwanted joysticks
+export SDL_JOYSTICK_DEVICE_BLACKLIST=unwanted:inputdevice:names
